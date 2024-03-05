@@ -10,7 +10,8 @@ int main(int argc, char *argv[])
     }
 
     for (int i=1; i <= max; i++) {
-        if (i % 3 == 0) printf("Fizz");
+        if(i % 15 == 0) printf("Fizz Buzz");
+        else if (i % 3 == 0) printf("Fizz");
         else if(i % 5 == 0) printf("Buzz");
         else printf("%d", i);
         if (i < max) printf(", ");
